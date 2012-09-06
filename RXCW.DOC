@@ -1,0 +1,230 @@
+								
+		RXCW  v 1.20
+
+Questo programma Š stato scritto per permettere a chiunque abbia un pc, un ta-
+sto telegrafico ed una batteria di fare pratica con la trasmissione del codice
+morse. La  connessione tra computer e  tasto Š molto semplice: bisogna mettere 
+una batteria in serie alla porta seriale Nø 1 (purtroppo per ora funziona solo 
+con questa), tra i piedini 1 e 5. La massa va collegata direttamente al piedi-
+no 5,  mentre il positivo va collegato  al piedino 1 dopo averlo fatto passare
+attraverso il tasto. Come batteria bisognerebbe usarne una da 5 volt, come ri-
+chiede  la porta seriale. Ho  usato una batteria da 9 volt qualche volta e non 
+ho mai  avuto problemi ma  non vi consiglio questa soluzione. Quella che credo
+essere pi— conveniente Š mettere due batterie da 1.5 Volt in serie. Anche que-
+sta soluzione Š stata testata con successo. Il programma funziona con qualsia-
+si scheda grafica su qualsiasi PC XT/AT.
+
+Chi   avesse   un   po'  di   pazienza  pu•   anche  provare  ad   usare   una
+interfaccia di  tipo Hamcom per decifrare il CW dal ricevitore. I collegamenti
+sono sempre gli stessi, in pratica Š come se l' interfaccia funzionasse da ta-
+sto. In questo caso, se la vostra interfaccia non Š ben tarata e se il segnale 
+da ricevere non Š molto pulito, non vi assicuro i migliori risultati. I piedi-
+ni  indicati per le  connessioni fanno  riferimento al connettore da 9 pin! Se 
+avete un connettore da 25 pin tenete presente queste corrispondenze:
+			   
+  [connettore 9 pin]  pin 1 <============> pin 8  [connettore 25 pin]
+  [    ""     " "" ]  pin 5 <============> pin 7  [    ""     "" "" ]
+
+Non vi assicuro il funzionamento in questo caso perchŠ non ho mai fatto questa
+prova. Se qualcuno la far… Š pregato di farmi sapere l' esito. Grazie.
+
+Il programma infine Š ancora pi— semplice. Con  i tasti + e - cambiate la fre-
+quenza della nota. Con i tasti < e > cambiate il  valore della velocit… di ri-
+cezione. Questo valore non ha alcun riferimento al tempo (es: caratteri al mi-
+nuto) ma serve  semplicemente come indicazione.  Tenete presente che quando il 
+valore aumenta la  velocit… diminuisce e, viceversa, quando il valore diminui-
+sce la velocit… aumenta.  Lo stesso valore, su computer con clock diverso, in-
+dica una velocit… di ricezione diversa. Con il tasto S cambiate il colore del-
+lo sfondo e con il tasto C  il colore  del testo. Quando  cambierete un colore 
+verr… cancellato tutto  il testo  precedentemente ricevuto!  Con il tasto B si 
+attiva e disattiva il  tono che funge da  oscillofono. Con ESC uscite dal pro-
+gramma. Per avere un piccolo help sui comandi usate ? oppure H. Quando cambia-
+te i colori,  per vedere come apparira'  il testo ricevuto,  potete usare come
+riferimento i caratteri P e L che appaiono appena sopra le due linee continue.
+
+Ogni volta che farete partire RXCW, verra' aperto un file di testo avente come
+nome la data odierna. Per esempio se oggi e' il 13 Marzo 1995 il file si chia-
+mera' 13-03-95.LOG ; il formato e'  quindi: "GG-MM-AA.LOG".  In questo file di
+testo verra' innanzitutto scritta la data e l'  ora in cui avete fatto partire
+il programma,  quindi verranno scritti tutti i  caratteri ricevuti  durante l'
+esecuzione  del programma.  Se farete  partire il  programma piu'  volte nello
+stesso giorno, il testo sara'  aggiunto alla fine del file, per cui non preoc-
+cupatevi di cancellare qualcosa.  In questo modo avrete un log di tutta la at-
+tivita' del programma suddiviso per giorni.  Se vorrete vedere cosa avete com-
+binato il giorno 13 Marzo  1995 non dovrete fare altro che usare un  qualsiasi
+editor di testo DOS ( per esempio EDIT, o anche LIST ) per aprire il file cor-
+rispondente alla data ( ovviamente  tale file deve essere esistente ). I  file
+di log saranno scritti nella directory corrente.
+
+Il programma Š stato studiato per imparare il morse in modo da superare il fa-
+tidico esame per la patente ordinaria. Per questo, come le famigerate macchine 
+del ministero, richiede una cadenza piuttosto precisa, tipo macchina, appunto.
+Le prime  volte questo potr… risultare fastidioso ma, con un po' di tempo e di
+esercizio, riuscirete  senz' altro  ad acquistare  una cadenza ottimale che vi 
+sar… utile anche quando,  licenza alla mano,  potrete utilizzare il CW per ef-
+fettuare i vostri collegamenti in HF. In ogni caso tenete presente che il pro-
+gramma Š severissimo, molto di pi— delle macchine degli esami. Praticamente se
+riuscite a trasmettere senza sbagliare nemmeno un carattere e uno spazio vuole
+dire che siete una macchina hi! Perci• considerate il programma come uno stru-
+mento  di perfezionamento e non come un qualcosa che possa decodificare al me-
+glio la vostra manipolazione. State sicuri che un qualsiasi corrispondente ca-
+pir…  ci• che avete trasmesso anche se  non avete usato una spaziatura da mac-
+china!
+
+I caratteri riconosciuti dal programma sono tutti quelli elencati alla fine di
+questo file.  Altri caratteri non saranno decodificati anzi, saranno decodifi-
+cati come pi—  piacer… al programma hi.  Nello spazio che si  trova tra le due
+righe bianche in basso nello  schermo verranno visualizzati  i risultati della
+vostra manipolazione.  Se il programma riconoscer… che avete battuto una linea
+allora verr… visualizzata una linea,  altrimenti uscir… un punto. Questi segni
+verranno visualizzati di seguito fino a quando non avrete finito il carattere.
+Questo significa che quando rimarrete inattivi per l' equivalente di tre punti
+allora ci•  che Š stato  ricevuto verr… decodificato dal programma e verr… vi-
+sualizzato il  carattere relativo.  Dopo ci•, quando inizierete di nuovo a ma- 
+nipolare il tasto, le linee e i punti ricevuti saranno cancellati per fare po-
+sto ai nuovi.  Se rimarrete inattivi per l' equivalente di cinque punti allora
+verr… visualizzato uno spazio di seguito al carattere precedentemente trasmes-
+so.  All'  inizio Š bene regolare la velocit…  di ricezione in modo che quando 
+batterete un punto questo venga visualizzato e,  allo stesso modo, quando bat-
+terete una  linea questa venga  visualizzata. Cercate  di capire la  lunghezza 
+giusta del punto e della linea. Allo scopo vi ricordo le seguenti equivalenze:
+
+ - 1 linea = 3 punti
+ - Spazio tra punti e linee = 1 punto
+ - Spazio tra caratteri = 3 punti
+ - Spazio tra parole = 5 punti
+
+Per capire bene la lunghezza esatta dei punti e delle linee dalla versione 1.2
+e' stato introdotto un nuovo sistema.  Quando il tasto sara'  premuto ci sara'
+una serie di caratteri come questo > che verranno visualizzati di seguito sul-
+la linea dello schermo dove ci sono i caratteri P e L.  La posizione di questi
+caratteri sta ad indicare la giusta lunghezza di Punti e Linee. Per quanto ri-
+guarda i punti dovete fare riferimento al carattere P: piu'  vi avvicinerete a
+questo e piu'  starete battendo bene il punto con la sua giusta lunghezza. In-
+vece, per quanto riguarda le linee, se la serie di > non raggiunge la L allora
+siamo ancora  nella lunghezza del punto, altrimenti,  se superiamo la L, siamo
+nel campo della linea.  Questo  significa che,  se quando lasciamo il tasto la
+serie di >  si trova a sinistra della L,  avremo un punto,  altrimenti,  se la
+serie di > supera la L, avremo una linea. La serie di > rimarra' sul video fi-
+no a quando non inizieremo  di nuovo a manipolare il tasto. L' ultimo caratte-
+re della serie di > verra' sostituito con un carattere particolare per segnare
+con piu' evidenza dove siamo arrivati.
+
+
+Sperando di avere fatto cosa utile per chi volesse cimentarsi con la trasmis-
+sione del CW,  vi ricordo il mio indirizzo per i vostri  suggerimenti che, se 
+nelle mie modeste capacit…, cercher• senz'  altro di tradurre  nel programma.
+
+
+		SWL I0-5252/FR
+
+		Mirko Caserta
+		Via Lazio, 6
+		Roccasecca Scalo (FR)
+		C.A.P. 03030
+
+
+Il programma presenta molti difetti che non ho ancora avuto modo di mettere a
+posto. Spero di farlo entro breve tempo. Siete comunque pregati di segnalare 
+i malfunzionamenti che potrebbero verificarsi. Diffondete il programma!
+
+Un ringraziamento particolare va a Giuseppe IW0FFP. Senza il suo aiuto ed in-
+coraggiamento probabilmente questo programma non avrebbe mai visto la luce di
+un monitor hi. Il programma non prevede il training in ricezione perche'  per
+questo scopo esiste una marea di software di altissimo livello.  Per chi deve
+superare la prova per l' ottenimento della  patente ordinaria di radioamatore
+mi permetto comunque di consigliare CORSO CW di IK1AYT  in quanto simula per-
+fettamente quanto viene trasmesso all'  esame ed ha anche un  ottimo test per
+la trasmissione che pero' funziona con la tastiera del PC.
+								
+  73 e in bocca al lupo !!!
+
+
+  N.B.: 
+
+L' AUTORE NON SI RITIENE  RESPONSABILE DI EVENTUALI DANNI ARRECATI ALLA PORTA
+SERIALE DOVUTI AD UN NON CORRETTO USO DEL "CIRCUITO".  Se seguirete le istru-
+zioni date non  avrete alcun problema.  Cercate in ogni  caso di non superare
+i 5  Volt !   RXCW e'  stato testato usando il programma  HAMCOM di DL5YEC in
+trasmissione. 
+
+								
+   DISTRIBUZIONE
+
+
+Per ricevere copia dell' ultima versione di RX CW spedite un dischetto da 720
+o 1440k gia' formattato in una busta (opportunamente imbottita per proteggere
+il contenuto dai timbri postali) preindirizzata e preaffrancata (di solito il
+costo dei francobolli e' di œ 1850) a sua  volta inserita in una comune busta
+che possa contenere il tutto. Per favore non fate raccomandate o assicurate !
+
+Potete diffondere il programma tenendo conto che:
+
+- Non dovete trarne lucro.
+
+- Il pacchetto deve essere distribuito senza essere modificato in alcuna sua
+  parte. Questo significa che dovrete sempre distribuire i due file RXCW.EXE 
+  e RXCW.DOC insieme e non dovete modificarli.
+
+------------------------------------------------------------------------------
+		
+		Caratteri riconosciuti dal programma:
+
+A -> ù -               TI TA
+B -> - ù ù ù           TA TI TI TI
+C -> - ù - ù           TA TI TA TI
+D -> - ù ù             TA TI TI
+E -> ù                 TI
+F -> ù ù - ù           TI TI TA TI
+G -> - - ù             TA TA TI
+H -> ù ù ù ù           TI TI TI TI
+I -> ù ù               TI TI
+L -> ù - ù ù           TI TA TI TI
+M -> - -               TA TA
+N -> - ù               TA TI
+O -> - - -             TA TA TA
+P -> ù - - ù           TI TA TA TI
+Q -> - - ù -           TA TA TI TA
+R -> ù - ù             TI TA TI
+S -> ù ù ù             TI TI TI
+T -> -                 TA
+U -> ù ù -             TI TI TA
+V -> ù ù ù -           TI TI TI TA
+Z -> - - ù ù           TA TA TI TI
+W -> ù - -             TI TA TA
+Y -> - ù - -           TA TI TA TA
+J -> ù - - -           TI TA TA TA
+K -> - ù -             TA TI TA
+X -> - ù ù -           TA TI TI TA
+
+0 -> - - - - -         TA TA TA TA TA
+9 -> - - - - ù         TA TA TA TA TI
+8 -> - - - ù ù         TA TA TA TI TI
+7 -> - - ù ù ù         TA TA TI TI TI
+6 -> - ù ù ù ù         TA TI TI TI TI
+5 -> ù ù ù ù ù         TI TI TI TI TI
+4 -> ù ù ù ù -         TI TI TI TI TA
+3 -> ù ù ù - -         TI TI TI TA TA
+2 -> ù ù - - -         TI TI TA TA TA
+1 -> ù - - - -         TI TA TA TA TA
+
+)  -> - ù - - ù -      TA TI TA TA TI TA      Parentesi chiusa
+;  -> - ù - ù - ù      TA TI TA TI TA TI      Punto e virgola
+:  -> - - - ù ù ù      TA TA TA TI TI TI      Due punti
+'' -> ù - ù ù - ù      TI TA TI TI TA TI      Virgolette 
+?  -> ù ù - - ù ù      TI TI TA TA TI TI      Punto interrogativo
+,  -> - - ù ù - -      TA TA TI TI TA TA      Virgola 
+.  -> ù - ù - ù -      TI TA TI TA TI TA      Punto
+(  -> - ù - - ù        TA TI TA TA TI         Parentesi aperta
+/  -> - ù ù - ù        TA TI TI TA TI         Barra
+#  -> ù ù ù ù ù ù      TI TI TI TI TI TI      Errore
+__
+SK -> ù ù ù - ù -      TI TI TI TA TI TA 
+__
+AS -> ù - ù ù ù        TI TA TI TI TI
+__
+AR -> ù - ù - ù        TI TA TI TA TI
+__
+BT -> - ù ù ù -        TA TI TI TI TA
+
+------------------------------------------------------------------------------

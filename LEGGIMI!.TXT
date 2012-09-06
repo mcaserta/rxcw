@@ -1,0 +1,19 @@
+
+In questo dischetto si trovano due programmi. Se avete usato PKUNZIP in prece-
+denza non avrete bisogno di leggere queste istruzioni. Se invece non avete mai
+usato PKUNZIP allora dovete installare i programmi usando questo comando:
+
+A:\INSTALLA
+
+a questo punto partira' un breve file batch che installera' i due programmi
+sul vostro disco rigido. RXCW 1.2 sara' installato nella directory "RXCW", in-
+vece CORSO_CW sara' installato nella directory "CORSO_CW". Leggete attentamen-
+te il manuale di RXCW. Se usate RXCW facendolo partire da un dischetto, non
+dimenticate di sproteggere questo dalla scrittura se volete che la vostra at-
+tivita' venga registrata su file.
+
+CORSO_CW e' stato scritto da IK1AYT.
+
+  73 e buon morse de I0-5252/FR
+
+
